@@ -1,0 +1,26 @@
+{
+    "name": "asterisk-config",
+    "displayName": "Asterisk config",
+    "description": "Asterisk .conf files syntax support",
+    "version": "1.0.0",
+    "publisher": "ffloimair",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "asterisk-config",
+            "aliases": ["Asterisk config", "asterisk-config"],
+            "extensions": [".conf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "asterisk-config",
+            "scopeName": "source.asterisk.config",
+            "path": "./syntaxes/Asterisk config.tmLanguage"
+        }]
+    }
+}
