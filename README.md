@@ -17,7 +17,7 @@ Syntax highlighting support for Asterisk configuration files for:
   * variables
   * dialplan labels
 
-![Example Screenshot of Asterisk sample dialplan](images/asterisk-syntax.png)
+![Example Screenshot of Asterisk sample dialplan](https://raw.githubusercontent.com/ffloimair/vscode-asterisk-syntax/master/images/asterisk-syntax.png)
 
 ## Release notes
 
