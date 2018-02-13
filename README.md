@@ -19,9 +19,14 @@ Syntax highlighting support for Asterisk configuration files for:
 
 ![Example Screenshot of Asterisk sample dialplan](https://raw.githubusercontent.com/ffloimair/vscode-asterisk-syntax/master/images/asterisk-syntax.png)
 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fffloimair%2Fvscode-asterisk-syntax.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fffloimair%2Fvscode-asterisk-syntax?ref=badge_shield)
+
 ## Release notes
 
 ### 1.0.0 (2017-11-20)
 
   * Initial version.
   * Based on SublimeAsteriskConfig language file by Vladimir Kotikov.
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fffloimair%2Fvscode-asterisk-syntax.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fffloimair%2Fvscode-asterisk-syntax?ref=badge_large)
