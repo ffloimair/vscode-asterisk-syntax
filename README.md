@@ -28,5 +28,9 @@ Syntax highlighting support for Asterisk configuration files for:
   * Initial version.
   * Based on SublimeAsteriskConfig language file by Vladimir Kotikov.
 
+### 1.0.1 (2019-09-02)
+
+  * Correctly support comments
+
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fffloimair%2Fvscode-asterisk-syntax.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fffloimair%2Fvscode-asterisk-syntax?ref=badge_large)
