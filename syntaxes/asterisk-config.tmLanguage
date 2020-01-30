@@ -56,7 +56,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(exten)\s*(=&gt;)\s*(a|h|i|o|s|t|T|e|failed|fax|talk|receiver|(?:_[0-9XZN!\.]+)),(\d+|n)(\(.*?\))?,</string>
+					<string>^\s*(exten)\s*(=&gt;?)\s*(a|h|i|o|s|t|T|e|failed|fax|talk|receiver|(_?[0-9XZN!\.]+)),(\d+|n)(\(.*?\))?,</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -86,6 +86,34 @@
 						</dict>
 					</dict>
 					<key>end</key>
+<!--
+					<key>begin</key>
+					<string>^\s*(same)\s*(=&gt;?)\s*(\d+|n)(\(.*?\))?,</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>support.constant</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>support.constant</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>support.class</string>
+						</dict>
+					</dict>
+					<key>end</key>
+ -->
 					<string>$</string>
 					<key>name</key>
 					<string>meta.extension</string>
@@ -93,7 +121,7 @@
 					<array>
 						<dict>
 							<key>begin</key>
-							<string>(NoOp|Answer|Dial|Hangup|Busy|MixMonitor|GotoIf|Goto|Set|Macro|Queue)\(?</string>
+							<string>(Answer|Busy|ConfBridge|Dial|Hangup|GotoIf|Goto|Macro|MixMonitor|NoOp|Playback|Queue|Set|Verbose|VoiceMailMain)\(?</string>
 							<key>beginCaptures</key>
 							<dict>
 								<key>1</key>
@@ -126,7 +154,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*([a-zA-Z_-]+)\s*(=)(?!&gt;)</string>
+					<string>^\s*([a-zA-Z_-]+)\s*(=)(?!&gt;?)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -170,7 +198,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(include|[a-zA-Z_-]+)\s*(=&gt;)</string>
+					<string>^\s*(include|[a-zA-Z_-]+)\s*(=&gt;?)</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
